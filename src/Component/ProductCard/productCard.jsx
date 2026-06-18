@@ -6,7 +6,7 @@ const productCard = ({ setProducts, product, products }) => {
 
     //handle delete product
     const handleDelete = (id) => {
-        fetch(`http://localhost:3000/deleteProduct/${id}`, {
+        fetch(`https://office-task-dusky.vercel.app/deleteProduct/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -31,7 +31,7 @@ const productCard = ({ setProducts, product, products }) => {
 
     //handle view product details
     const handleDetails = (id) => {
-        fetch(`http://localhost:3000/product/${id}`)
+        fetch(`https://office-task-dusky.vercel.app/product/${id}`)
             .then(res => res.json())
             .then(data => {
                 console.log('Product details:', data);

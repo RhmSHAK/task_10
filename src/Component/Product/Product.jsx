@@ -8,7 +8,7 @@ const Product = () => {
 
     //fetch data from the server
     useEffect(() => {
-        fetch('http://localhost:3000/products')
+        fetch('https://office-task-dusky.vercel.app/products')
             .then(res => res.json())    
             .then(data => {
                 console.log('products from the server', data);

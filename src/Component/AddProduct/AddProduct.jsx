@@ -18,7 +18,7 @@ const AddProduct = () => {
         console.log(productObject);
 
         //sent data to the server
-        fetch('http://localhost:3000/addProduct', {
+        fetch('https://office-task-dusky.vercel.app/addProduct', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
