@@ -6,7 +6,7 @@ import App from './App.jsx'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 
-import Main from './Main/Main.jsx';
+import Mains from './Mains/Mains.jsx';
 import Home from './Home/Home.jsx';
 import SignIn from './Component/SignIN/signIn.jsx';
 import SignUp from './Component/SignUP/signUp.jsx';
@@ -17,7 +17,7 @@ import Product from './Component/Product/Product.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Mains></Mains>,
     children: [
       {
          path: "/",
